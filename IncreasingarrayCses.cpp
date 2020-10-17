@@ -1,3 +1,5 @@
+//Increasing Array Solution Of Cses
+
 #include <bits/stdc++.h>
 #define ll long long
 #define endl '\n'
@@ -17,7 +19,11 @@ int main()
     for(int i=0;i<n-1;i++)
     {
         if(a[i]>a[i+1])
-        
+        {
+        x=a[i]-a[i+1];
+        a[i+1]=a[i+1]+x;
+        count+=x;
+        }
         
     }
     cout<<count;
